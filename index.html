@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <title>Car Rental | Home</title>
+</head>
+<body class="page-home">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- The navbar-expand-lg class makes the navbar responsive, expanding it on larger screens and collapsing it on smaller screens. The navbar-light class applies a light color scheme to the navbar, making it suitable for use on light backgrounds. -->
+        <div class="container">
+            <a class="navbar-brand" href="index.html">GAC DANDENONG</a>
+            <!-- The navbar-brand class is used to style the brand name or logo of the website,which in this case is "GAC DANDENONG". It typically appears on the left side of the navbar and serves as a link to the homepage. -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- The navbar-toggler class styles the button that appears when the navbar is collapsed on smaller screens. The data-bs-toggle="collapse" attribute indicates that
+                  this button will toggle the visibility of the collapsible content, which is identified by the data-bs-target="#navMenu" attribute. The aria-controls, aria-expanded, and aria-label attributes are used for accessibility purposes, providing information about the button's functionality to assistive technologies. -->
+                <span class="navbar-toggler-icon"></span>
+                <!-- The navbar-toggler-icon class is used to style the icon that appears on the toggle button, typically represented as three horizontal lines (also known as a "hamburger" icon).
+                  This icon indicates to users that they can click the button to expand or collapse the navigation menu. -->
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <!-- The collapse class is used to hide the navigation menu on smaller screens, while the navbar-collapse class styles the collapsible content of the navbar. The id="navMenu" attribute is used to link this collapsible content to the toggle button, allowing it to be shown or hidden when the button is clicked. -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- The navbar-nav class styles the unordered list as a navigation menu. The ms-auto class is a Bootstrap utility class that applies a left margin to auto, effectively pushing the navigation items to the right side of the navbar. The mb-2 and mb-lg-0 classes apply bottom margins to the navigation items, with mb-2 applying a margin on smaller screens and mb-lg-0 removing the margin on larger screens. -->
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cars.html">Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <!-- The nav-link dropdown-toggle class is used to style the dropdown toggle button, which in this case is "More". The href="#" attribute is a placeholder for the dropdown's target link. The id="moreDropdown" attribute is used to link the dropdown menu to the toggle button. The role="button" attribute indicates that the element serves as a button. The data-bs-toggle="dropdown" attribute indicates that this button will toggle the visibility of the dropdown menu. The aria-expanded="false" attribute indicates that the dropdown menu is currently hidden. -->
+                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                        <!-- The dropdown-menu class styles the unordered list as a dropdown menu, while the dropdown-menu-end class aligns the dropdown menu to the right side of its parent container. The aria-labelledby="moreDropdown" attribute links the dropdown menu to the toggle button for accessibility purposes. -->
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreDropdown">
+                            <!-- The dropdown-item class styles the anchor tags within the dropdown menu as individual items. Each item serves as a link to a different page or section of the website. -->
+                            <li><a class="dropdown-item" href="cars.html">All Cars</a></li>
+                            <li><a class="dropdown-item" href="booking.html">Book Now</a></li>
+                            <li><a class="dropdown-item" href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero d-flex align-items-center">
+        <!-- The hero class is a custom class that likely applies specific styles to the header section, such as background images, colors, or padding. The d-flex class is a Bootstrap utility class that applies a flexbox layout to the header, allowing for flexible alignment of its child elements. The align-items-center class centers the child elements vertically within the header. -->
+        <div class="container text-white text-center">
+            <!-- The container class is a Bootstrap class that provides a responsive fixed-width container for the content within the header. The text-white class applies a white color to the text, while the text-center class centers the text horizontally. -->
+            <p class="eyebrow">Premium Luxury Rentals</p>
+            <!-----text above the main heading----->
+            <h1>Drive the car you deserve</h1>
+            <p class="hero-copy">Explore our modern fleet, compare full specs and book in seconds with transparent pricing.</p>
+            <!text below the main heading---->
+            <a class="btn btn-primary btn-lg" href="cars.html">Browse Available Cars</a>
+            <!-- The btn class styles the anchor tag as a button, while the btn-primary class applies the primary color scheme to the button. The btn-lg class makes the button larger than the default size. The href="cars.html" attribute specifies that clicking the button will navigate the user to the "cars.html" page, where they can browse the available cars for rental. -->
+        </div>
+    </header>
+
+    <section class="py-5">
+        <!--bootstrap claas create space above & below the contet-->
+        <div class="container">
+            <div class="row g-4 text-center">
+                <!-- The row class is a Bootstrap class that creates a horizontal group of columns. The g-4 class applies a gutter (spacing) of 4 units between the columns, while the text-center class centers the text within each column. -->
+                <div class="col-md-4">
+                    <!-- The col-md-4 class creates a column that takes up 4 out of 12 grid units on medium-sized screens and larger. -->
+                    <div class="feature-card p-4 h-100">
+                        <!-- The feature-card class is a custom class that likely applies specific styles to the card, such as background color, border, or shadow. The p-4 class applies padding of 4 units to all sides of the card, while the h-100 class makes the card take up the full height of its parent container. -->
+                        <h3>Stylish Selection</h3>
+                        <p>Luxury sedans, sport SUVs and premium specials, all ready for your next journey.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 h-100">
+                        <h3>Easy Booking</h3>
+                        <p>Responsive booking form, clear pricing, and instant reservation confirmation.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card p-4 h-100">
+                        <h3>Trusted Service</h3>
+                        <p>Professional support, flexible pickup options, and a seamless rental experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-cars py-5 bg-secondary bg-opacity-10">
+        <!-- Section for displaying featured cars bg is a custom class for background styling -->
+        <div class="container">
+            <div class="section-heading text-center mb-4">
+                <!---mb is boottom marginn of 4 units to create spacebetween heading,contenrt below section heading--->
+                <p class="eyebrow">Featured Fleet</p>
+                <h2>Available cars today</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <!--md is medium screen size and lg is large screen size, col-md-6 means the column will take up 6 out of 12 grid units on medium screens, while col-lg-4 means it will take up 4 out of 12 grid units on large screens. This allows for a responsive layout that adjusts based on the screen size. -->
+                    <div class="card car-card h-100">
+                        <img src="fortuner.jpeg" class="card-img-top" alt="Fortuner">
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Fortuner</h5>
+                            <p class="card-text">Reliable SUV with premium comfort, 7 seats and advanced safety.</p>
+                        </div>
+                        <div class="card-footer text-center">   
+                         <a href="car-detail.html" class="btn btn-outline-primary">View details</a>
+                         <!-- The card-footer class styles the footer section of the card, while the text-center class centers the content within the footer. The anchor tag with the btn and btn-outline-primary classes styles it as a button with an outline design. The href="car-detail.html" attribute specifies that clicking the button will navigate the user to the "car-detail.html" page, where they can view more details about the Toyota Fortuner. -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card car-card h-100">
+                        <img src="mercedes%20benz.jpeg" class="card-img-top" alt="Mercedes Benz">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes Benz</h5>
+                            <p class="card-text">Elegant luxury sedan with refined performance and premium cabin styling.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="car-detail.html" class="btn btn-outline-primary">View details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="card car-card h-100">
+                        <img src="sonata.jpeg" class="card-img-top" alt="Sonata">
+                        <div class="card-body">
+                            <h5 class="card-title">Hyundai Sonata</h5>
+                            <p class="card-text">Comfortable sedan with sporty handling and smart interior technology.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="car-detail.html" class="btn btn-outline-primary">View details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us py-5">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-7">
+                    <h2>Why choose GAC Dandenong?</h2>
+                    <ul class="list-unstyled mt-4">
+                        <li>• Exclusive premium vehicles and transparent pricing.</li>
+                        <li>• Local pickup, airport delivery and weekend specials.</li>
+                        <li>• Expert support for business, weddings and leisure travel.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="info-card p-4">
+                        <h3>Ready to reserve?</h3>
+                        <p>Move from browsing to booking with a single click and secure your ride today.</p>
+                        <a class="btn btn-primary" href="booking.html">Start Booking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="site-footer py-5">
+        <div class="container text-center text-white">
+            <p>Contact us at <a href="mailto:info@carrental.com">info@carrental.com</a> or call 123-456-7890</p>
+            <p> 2026 GAC Dandenong. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

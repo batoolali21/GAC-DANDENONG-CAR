@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <title>Car Rental | Booking</title>
+</head>
+<body class="page-booking">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">GAC DANDENONG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cars.html">Cars</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreDropdown">
+                            <li><a class="dropdown-item" href="cars.html">All Cars</a></li>
+                            <li><a class="dropdown-item" href="booking.html">Book Now</a></li>
+                            <li><a class="dropdown-item" href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="detail-panel p-4 rounded shadow-sm">
+                        <span class="eyebrow">Booking Form</span>
+                        <h1>Reserve your car</h1>
+                        <p>Fill out your booking details and confirm your reservation instantly.</p>
+                        <form action="confirmation.html" method="get" class="mt-4">
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" name="email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" class="form-control" name="phone" placeholder="123-456-7890" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Select Model</label>
+                                <select class="form-select" name="model" required>
+                                    <option value="Toyota Fortuner">Toyota Fortuner</option>
+                                    <option value="Mercedes Benz">Mercedes Benz</option>
+                                    <option value="Hyundai Sonata">Hyundai Sonata</option>
+                                </select>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Pickup Date</label>
+                                    <input type="date" class="form-control" name="pickup" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Return Date</label>
+                                    <input type="date" class="form-control" name="return" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label class="form-label">Special Requests</label>
+                                <textarea class="form-control" name="requests" rows="3" placeholder="Any additional details"></textarea>
+                            </div>
+                            <button class="btn btn-primary btn-lg w-100" type="submit">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="info-card p-4 rounded shadow-sm h-100">
+                        <h3>Fast & Secure Rental</h3>
+                        <p>Our booking page is designed for fast reservations, secure details, and clear pickup options.</p>
+                        <ul>
+                            <li>Instant confirmation page</li>
+                            <li>Flexible cancellation policy</li>
+                            <li>Dedicated support from booking to return</li>
+                        </ul>
+                        <p class="mt-4">After submitting the form, you will go to a confirmation screen with your booking summary.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer py-4 text-center">
+        <div class="container">
+            <p>&copy; 2026 GAC Dandenong. Book confidently with our premium fleet.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

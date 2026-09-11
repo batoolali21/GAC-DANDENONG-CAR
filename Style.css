@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    color: #f7f7fb;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, #0f1015 0%, #181c2a 50%, #646772 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.96) !important;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-brand {
+    color: #1c1f33 !important;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.navbar-collapse {/* NAVBAR COLLAPSE is  the container for the collapsible content of the navbar, such as the navigation links. */
+    justify-content: center;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #1c1f33 !important;
+    font-weight: 700;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #690818 !important;
+}
+
+.dropdown-menu {
+    border-radius: 18px;
+    border: 1px solid rgba(209, 84, 84, 0.811);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(131, 3, 71, 0.521);
+}
+
+.hero {
+    min-height: 74vh;
+    background: radial-gradient(circle at top left, rgba(255, 93, 121, 0.2), transparent 30%),
+        linear-gradient(135deg, #1d132f 0%, #0c101b 100%);
+    display: flex;
+    align-items: center;
+}
+
+.hero .eyebrow {/* Eyebrow text above the main heading */
+    color: #c11d4b;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: clamp(2.6rem, 4vw, 4.3rem);
+    line-height: 1.05;
+    font-weight: 900;
+}
+
+.hero-copy {/* Subheading text below the main heading */
+    color: rgba(247, 247, 251, 0.88);
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin: 1.5rem auto 2rem;
+}
+
+.btn-primary,
+.btn-outline-primary {
+    border-radius: 999px;
+    padding: 0.95rem 2rem;
+    font-weight: 700;
+}
+
+.btn-primary {/*button on hero*/
+    background-color: #6e0819;
+    border-color: #ff5d79;
+}
+
+.btn-primary:hover {
+    background-color: #180206;
+    border-color: #e34f68;
+}
+
+.btn-outline-primary {/*button on car cards*/
+    color: #b47eb2;
+    border-color: rgba(80, 7, 27, 0.981);
+}
+
+.btn-outline-primary:hover {
+    background-color: rgba(131, 28, 45, 0.581);
+}
+
+.feature-card,
+.info-card,
+.car-card,
+.detail-panel,
+.confirmation-card {
+    background: rgba(17, 19, 31, 0.88);
+    border: 1px solid rgba(107, 11, 27, 0.12);
+    border-radius: 26px;
+    backdrop-filter: blur(18px);/*backdrop filter is used to create a frosted glass effect by blurring the background behind the element, enhancing the visual appeal and readability of the content within the card.*/
+    color: #f7f7fb;
+}
+
+.feature-card,
+.info-card,
+.car-card,
+.detail-panel,
+.confirmation-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card:hover,
+.info-card:hover,
+.car-card:hover,
+.detail-panel:hover,
+.confirmation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 50px rgba(255, 93, 121, 0.18);
+    border-color: rgba(255, 93, 121, 0.28);
+}
+
+.section-heading h2 {
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    margin-top: 0.4rem;
+}
+
+.section-heading .lead {/* Subheading text below the section heading */
+    color: rgba(247, 247, 251, 0.78);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    color: #ff7fa0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.82rem;
+}
+
+.car-card img,
+.detail-img {
+    border-radius: 26px 26px 0 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+.car-card img {
+    height: 210px;
+}
+
+.detail-img {
+    min-height: 300px;
+}
+
+.car-card .card-body {
+    padding: 1.5rem;
+}
+
+.card-title {/* Car model name on car cards */
+    color: #c15a5a;
+}
+
+.card-text,
+.feature-card p,
+.info-card p,
+.detail-panel p,
+.site-footer p,
+.spec-list li {/* General text color for various sections */
+    color: rgba(247, 247, 251, 0.75);
+}
+
+.spec-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+.spec-list li {
+    padding: 0.55rem 0;
+    border-bottom: 1px solid rgba(255, 93, 121, 0.08);
+}
+
+.detail-panel {
+    padding: 2.2rem;
+}
+
+.spec-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.spec-grid strong {
+    color: #390c33;
+}
+
+.confirmation-screen {
+    min-height: 65vh;
+    background: linear-gradient(180deg, rgba(255, 93, 121, 0.14), rgba(14, 14, 24, 0.95));
+}
+
+.confirmation-card {
+    max-width: 720px;
+}
+
+.badge-circle {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff5d79;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.site-footer {
+    background: transparent;
+}
+
+.site-footer p {
+    color: rgba(247, 247, 251, 0.75);
+}
+
+.info-card ul {
+    padding-left: 1rem;
+}
+
+.info-card li {
+    margin-bottom: 0.8rem;
+}
+
+.form-control,
+.form-select,
+textarea.form-control {
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #f7f7fb;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 93, 121, 0.18);
+    border-color: #ff5d79;
+}
+
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.booking-form {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 26px;
+    border: 1px solid rgba(255, 93, 121, 0.1);
+    max-width: 720px;
+    margin: 2rem auto;
+}
+
+.page-home .hero,
+.page-cars .hero,
+.page-booking .hero,
+.page-detail .hero {
+    position: relative;
+}
+
+.page-home .featured-cars,
+.page-home .why-us,
+.page-cars main,
+.page-booking main,
+.page-detail main,
+.page-confirmation main {
+    padding-bottom: 4rem;
+}
+
+.page-home .feature-card,
+.page-cars .car-card,
+.page-booking .detail-panel,
+.page-detail .info-card,
+.page-confirmation .confirmation-card {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+@media (max-width: 991px) {
+    .hero {
+        min-height: 60vh;
+    }
+
+    .detail-panel,
+    .info-card,
+    .confirmation-card {
+        border-radius: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 4rem 1.2rem;
+    }
+
+    .hero-copy {
+        font-size: 1rem;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    
